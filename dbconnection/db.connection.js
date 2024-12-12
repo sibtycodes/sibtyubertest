@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 const connecttoDb = async () => {
   try {
     await mongoose.connect(
-      process.env.MONGO_URI,
+      "mongodb+srv://asadrafi:deployedmongodb@deploymentdb.tlz4k.mongodb.net/yourDatabaseName?retryWrites=true&w=majority&appName=deploymentdb",
       {
-        
-       
+
+
         serverSelectionTimeoutMS: 30000, // Timeout after 10 seconds
       }
     );
